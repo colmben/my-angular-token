@@ -478,9 +478,9 @@ class AngularTokenService {
         if (this.activatedRoute) {
             this.getAuthDataFromParams();
         }
-        // if (this.authData) {
-        //     this.validateToken();
-        // }
+        if (this.authData) {
+            this.validateToken();
+        }
     }
     // Parse Auth data from response
     /**
