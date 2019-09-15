@@ -373,9 +373,9 @@ class AngularTokenService {
                 password_confirmation: updatePasswordData.passwordConfirmation
             };
         }
-        console.log('In updatePassword BEFORE IF, updatePasswordData', updatePasswordData);
+        console.warn('In updatePassword BEFORE IF, updatePasswordData', updatePasswordData);
         if (updatePasswordData.resetPasswordToken) {
-            console.log('In updatePassword IF TRUE, updatePasswordData', updatePasswordData);
+            console.warn('In updatePassword IF TRUE, updatePasswordData', updatePasswordData);
             this.tryLoadAuthData();
         }
         /** @type {?} */
