@@ -456,7 +456,9 @@ var AngularTokenService = /** @class */ (function () {
                 password_confirmation: updatePasswordData.passwordConfirmation
             };
         }
+        console.log('In updatePassword BEFORE IF, updatePasswordData', updatePasswordData);
         if (updatePasswordData.resetPasswordToken) {
+            console.log('In updatePassword IF TRUE, updatePasswordData', updatePasswordData);
             this.tryLoadAuthData();
         }
         /** @type {?} */
